@@ -23,7 +23,7 @@ Keypad customKeypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 Keypad setKeypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS); 
 void setup()
 {
-  pinMode(8,OUTPUT);
+  pinMode(8,OUTPUT); //You can use digital Pin 8 as high/low output of your lock
   digitalWrite(8,LOW);
   lcd.begin(16, 2);
   lcd.print("     Welcome");
